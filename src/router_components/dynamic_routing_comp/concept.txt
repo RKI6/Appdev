@@ -1,0 +1,11 @@
+DYANMIC ROUTING :
+    1.  Individual components are created with different contents.
+        here TeamsInd.jsx , TeamsENG.jsx , TemaSa.jsx;
+    2.  A parent component is created to store all the child components as an object (teamComponents) with
+        key-value pairs (Ind : <TeamInd>) .
+    3.  the Object is imported in a new component as a referce to the child components which render the child component based 
+        on the Id (teamId) , the new component gets the Id by using useParams hook which returns the object of all params in 
+        the URL .
+    4.  Finally , it creates a constant  = to store the contents from the childcomponent of corresponding Id and renders.
+
+    childcomponents -> Object (parentcomponent) --Obj--> new componet (reference) -> render.
